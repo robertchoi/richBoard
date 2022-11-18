@@ -1,0 +1,31 @@
+{
+    "id": "360101",
+    "name": {
+        "en": "Super Rich Board",
+        "ko": "슈퍼리치보드"
+    },
+    "category": "board",
+    "platform": ["win32", "darwin"],
+    "icon": "GorillaCell.png",
+    "module": "GorillaCell.js",
+    "moduleName": "GorillaCell",
+    "url": "https://www.gorillacell.kr/",
+    "email": "robertchoi@gachon.ac.kr",
+    "driver": {
+        "win32-ia32": "CH34x_Install_Windows_v3_4/CH34x_Install_Windows_v3_4.EXE",
+        "win32-x64": "CH34x_Install_Windows_v3_4/CH34x_Install_Windows_v3_4.EXE",
+        "darwin-x64": "https://entrylabs.github.io/docs/files/drivers/CH34x_Install_MAC_10_9_AND_ABOVE/CH34x_Install_V1.3.pkg",
+        "translate": "CH340 드라이버"
+    },
+    "reconnect": true,
+    "hardware": {
+        "type": "serial",
+        "control": "slave",
+        "duration": 32,
+        "vendor": ["Arduino","wch.cn"],
+        "baudRate": 115200,
+        "firmwarecheck": true,
+        "byteDelimiter": [13, 10]
+    }
+}
+
